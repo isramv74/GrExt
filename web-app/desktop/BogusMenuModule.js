@@ -30,5 +30,7 @@ Ext.define('MyDesktop.BogusMenuModule', {
                 windowId: windowIndex
             });
         }
+
+
     }
 });

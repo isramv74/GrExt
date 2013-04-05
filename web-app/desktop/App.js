@@ -38,13 +38,13 @@ Ext.define('MyDesktop.App', {
         return [
             new MyDesktop.VideoWindow(),
             //new MyDesktop.Blockalanche(),
-            new MyDesktop.SystemStatus(),
-            new MyDesktop.GridWindow(),
-            new MyDesktop.TabWindow(),
-            new MyDesktop.AccordionWindow(),
-            new MyDesktop.Notepad(),
-            new MyDesktop.BogusMenuModule(),
-            new MyDesktop.BogusModule()
+            new MyDesktop.SystemStatus()//,
+            //new MyDesktop.GridWindow(),
+            //new MyDesktop.TabWindow(),
+            //new MyDesktop.AccordionWindow(),
+            //new MyDesktop.Notepad(),
+            //new MyDesktop.BogusMenuModule(),
+            //new MyDesktop.BogusModule()
         ];
     },
 
@@ -61,14 +61,15 @@ Ext.define('MyDesktop.App', {
             shortcuts: Ext.create('Ext.data.Store', {
                 model: 'Ext.ux.desktop.ShortcutModel',
                 data: [
-                    { name: 'Grid Window', iconCls: 'grid-shortcut', module: 'grid-win' },
+                    //{ name: 'Grid Window', iconCls: 'grid-shortcut', module: 'grid-win' },
                     //{ name: 'Accordion Window', iconCls: 'accordion-shortcut', module: 'acc-win' },
                     //{ name: 'Notepad', iconCls: 'notepad-shortcut', module: 'notepad' },
                     { name: 'System Status', iconCls: 'cpu-shortcut', module: 'systemstatus'}
                 ]
             }),
 
-            wallpaper: 'wallpapers/Blue-Sencha.jpg',
+            //wallpaper: 'wallpapers/Blue-Sencha.jpg',
+            wallpaper: 'wallpapers/puebla.png',
             wallpaperStretch: false
         });
     },

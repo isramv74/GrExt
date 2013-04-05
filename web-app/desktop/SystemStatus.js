@@ -19,10 +19,10 @@ Ext.define('MyDesktop.SystemStatus', {
 
     init : function() {
         // No launcher means we don't appear on the Start Menu...
-//        this.launcher = {
-//            text: 'SystemStatus',
-//            iconCls:'cpustats'
-//        };
+        this.launcher = {
+            text: 'SystemStatus',
+            iconCls:'cpustats'
+        };
 
         Ext.chart.theme.Memory = Ext.extend(Ext.chart.theme.Base, {
             constructor: function(config) {
